@@ -164,19 +164,14 @@ function Slide5() {
   useEffect(() => { const t = setTimeout(() => setVis(true), 100); return () => clearTimeout(t); }, []);
   const plans = [
     {
-      name: "Старт", price: "29 900 ₽", desc: "Для небольших заведений",
+      name: "Старт", price: "20 000 ₽", desc: "Для небольших заведений",
       features: ["Аудит работы мастеров", "Базовые стандарты граммовки", "2 дня обучения", "Чек-листы для контроля"],
       highlight: false,
     },
     {
-      name: "Профи", price: "59 900 ₽", desc: "Оптимальный выбор",
+      name: "Профи", price: "40 000 ₽", desc: "Оптимальный выбор",
       features: ["Всё из «Старт»", "Скрипты допродаж", "4 дня обучения + практика", "Метрики и аналитика", "1 месяц поддержки"],
       highlight: true,
-    },
-    {
-      name: "Премиум", price: "от 99 900 ₽", desc: "Полное сопровождение",
-      features: ["Всё из «Профи»", "Обучение всей команды", "Внедрение под ключ", "3 месяца поддержки", "Персональный куратор"],
-      highlight: false,
     },
   ];
   return (
@@ -185,7 +180,7 @@ function Slide5() {
         <div className="gold-tag">Цена</div>
         <h1 className="slide-title">Инвестиция, которая <em>окупается за 2 недели</em></h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 max-w-2xl">
         {plans.map((plan, i) => (
           <div key={i} onClick={() => setSelected(i)}
             className={`price-card ${selected === i ? "price-card--active" : ""} ${plan.highlight ? "price-card--highlight" : ""}`}
