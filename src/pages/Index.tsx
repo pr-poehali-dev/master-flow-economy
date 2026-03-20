@@ -246,10 +246,15 @@ function Slide6() {
           <p className="conclusion-text">Master Flow — это не траты на персонал. Это инвестиция, которая начинает приносить прибыль с первого дня после обучения.</p>
         </div>
         <div className="mt-4 text-center">
-          <button className="cta-btn">
+          <a
+            href={`https://wa.me/79997998874?text=${encodeURIComponent("Здравствуйте! Хочу внедрить систему Master Flow. Расскажите подробнее.")}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-btn"
+          >
             Внедрить Master Flow на этой неделе
             <Icon name="ArrowRight" size={18} className="ml-2 inline" />
-          </button>
+          </a>
           <p className="cta-sub">Давайте выведем ваш сервис на новый уровень уже сейчас</p>
         </div>
       </div>
