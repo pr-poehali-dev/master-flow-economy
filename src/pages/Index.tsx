@@ -196,6 +196,16 @@ function Slide5() {
                 </li>
               ))}
             </ul>
+            <a
+              href={`https://wa.me/79997998874?text=${encodeURIComponent(`Здравствуйте! Хочу выбрать тариф «${plan.name}» (${plan.price}). Расскажите подробнее.`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={e => e.stopPropagation()}
+              className="price-btn"
+            >
+              Выбрать
+              <Icon name="ArrowRight" size={14} className="ml-2 inline" />
+            </a>
           </div>
         ))}
       </div>
