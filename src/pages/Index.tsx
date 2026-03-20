@@ -43,7 +43,7 @@ function Slide1() {
     <div className="slide-inner">
       <div style={{ opacity: vis ? 1 : 0, transform: vis ? "translateY(0)" : "translateY(24px)", transition: "all 0.7s" }}>
         <div className="gold-tag">Проблема</div>
-        <h1 className="slide-title">Почему ваш кальянный <br /><em>теряет деньги каждый день?</em></h1>
+        <h1 className="slide-title">Почему ваша кальянная <br /><em>теряет деньги каждый день?</em></h1>
         <p className="slide-sub">Пока вы читаете это, ваши мастера допускают ошибки, которые стоят тысячи рублей</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
